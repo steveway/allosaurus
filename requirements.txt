@@ -1,6 +1,6 @@
 scipy
 numpy
-resampy
+soxr
 panphon
 torch
 editdistance
