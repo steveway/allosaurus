@@ -64,9 +64,6 @@ def resample_audio(audio, target_sample_rate):
     if audio.sample_rate == target_sample_rate:
         return audio
 
-    # Replace this line:
-    # new_samples = resampy.resample(audio.samples, audio.sample_rate, target_sample_rate)
-    # With:
     new_samples = soxr.resample(audio.samples, audio.sample_rate, target_sample_rate)
 
     new_audio = Audio(new_samples, target_sample_rate)
